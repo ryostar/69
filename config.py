@@ -38,22 +38,22 @@ else:
     finalurl=STREAM
 
 class Config:
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '1087968824')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ''))
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    API_ID = int(os.environ.get("API_ID", '6340775'))
+    CHAT = int(os.environ.get("CHAT", "-1001140954081"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001318155972")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
         LOG_GROUP=None
     STREAM_URL=finalurl
-    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "N")
-    ARQ_API=os.environ.get("ARQ_API", "")
+    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "Y")
+    ARQ_API=os.environ.get("ARQ_API", "TKWTIF-BBLIKJ-YFHTCA-DPETDC-ARQ")
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
-    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 30))
+    API_HASH = os.environ.get("API_HASH", "2265a0bd8c0a63b25eb330205426698d")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1659408866:AAFtM1pG7IU3CFY-IAg_7Tbi_iTiqvLcvI4") 
     SESSION = os.environ.get("SESSION_STRING", "SESSION")
     playlist=[]
     msg = {}
